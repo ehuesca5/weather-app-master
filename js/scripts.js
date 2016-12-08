@@ -34,7 +34,8 @@ $.simpleWeather({
         }
         if ( 10 >= weather.code && 19 <= weather.code  ) {
             
-         $('.spokane .wi').addClass('wi-snow');   
+         $('.spokane .wi').addClass('wi-snow');  
+       
             
         }
         
