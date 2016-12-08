@@ -9,11 +9,14 @@ YOUR STYLES
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+body {
+    background: url("http://weknowyourdreams.com/images/space/space-03.jpg");
+}
 
 main {
-    background: gray;
+    background: rgba(0,0,0,.5);
     margin: 1em;
-    padding: 1em;
+    padding: .1em;
     
     /* flexbox */
     display: flex;
@@ -21,7 +24,8 @@ main {
 }
 
 section {
-    background: steelblue;
+    background: rgba(0,0,0,.5);
+    color: white;
     padding: 1em;
     margin: 1em;
     
@@ -44,9 +48,11 @@ MEDIA QUERIES
   and (min-width: 80em) { 
   
   /* Diagnostic Styling. */
+/*
   body {
        background: blue;
   }
+*/
 
 }
 
@@ -58,9 +64,11 @@ MEDIA QUERIES
   and (min-width: 48em)  {
 
   /* Diagnostic Styling. */
+/*
   body {
        background: green;
   }
+*/
 
 }
 
@@ -72,8 +80,10 @@ MEDIA QUERIES
   and (min-width: 20em) { 
 
   /* Diagnostic Styling. */
+/*
 	body {
        background: red;
 	}
 	
+*/
 }

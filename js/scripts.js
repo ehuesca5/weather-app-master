@@ -9,14 +9,34 @@ $.simpleWeather({
       $('.spokane .city').text(weather.city);
       $('.spokane img').attr('src', weather.image);
       $('.spokane .title').text(weather.title);
-      
+      $('.spokane .currently').text(weather.currently);
+  
       // If this condition, show this icon
+        if ( 51 >= weather.code && 90 <= weather.code  ) {
+            
+         $('.spokane .wi').addClass('wi-day-sunny-overcast');   
+            
+        }
+         if ( 31 >= weather.code && 50 <= weather.code  ) {
+            
+         $('.spokane .wi').addClass('wi-day-haze');   
+            
+        }
         if ( 26 >= weather.code && 30 <= weather.code  ) {
             
          $('.spokane .wi').addClass('wi-day-cloudy');   
             
         }
-        
+        if ( 20 >= weather.code && 25 <= weather.code  ) {
+            
+         $('.spokane .wi').addClass('wi-day-sleet');   
+            
+        }
+        if ( 10 >= weather.code && 19 <= weather.code  ) {
+            
+         $('.spokane .wi').addClass('wi-snow');   
+            
+        }
         
       // Entire weather object
       console.log(weather);
@@ -39,7 +59,33 @@ $.simpleWeather({
       $('.seattle .city').text(weather.city);
       $('.seattle img').attr('src', weather.image);
        $('.seattle .title').text(weather.title);
-        
+         $('.seattle .currently').text(weather.currently);
+              // If this condition, show this icon
+        if ( 51 >= weather.code && 90 <= weather.code  ) {
+            
+         $('.seattle .wi').addClass('wi-day-sunny-overcast');   
+            
+        }
+         if ( 31 >= weather.code && 50 <= weather.code  ) {
+            
+         $('.seattle .wi').addClass('wi-day-haze');   
+            
+        }
+        if ( 26 >= weather.code && 30 <= weather.code  ) {
+            
+         $('.seattle .wi').addClass('wi-day-cloudy');   
+            
+        }
+        if ( 20 >= weather.code && 25 <= weather.code  ) {
+            
+         $('.seattle .wi').addClass('wi-day-sleet');   
+            
+        }
+        if ( 10 >= weather.code && 19 <= weather.code  ) {
+            
+         $('.seattle .wi').addClass('wi-snow');   
+           
+        }
       // Entire weather object
       console.log(weather);
     },
@@ -74,8 +120,35 @@ var getWeather = function(location) {
       $('.geo .temp').text(weather.temp);
       $('.geo .city').text(weather.city);
       $('.geo img').attr('src', weather.image);
-      $('.geo .title').text(weather.title);    
+      $('.geo .title').text(weather.title);  
+         $('.geo .currently').text(weather.currently);
         
+          // If this condition, show this icon
+        if ( 51 >= weather.code && 90 <= weather.code  ) {
+            
+         $('.geo .wi').addClass('wi-day-sunny-overcast');   
+            
+        }
+         if ( 31 >= weather.code && 50 <= weather.code  ) {
+            
+         $('.geo .wi').addClass('wi-day-haze');   
+            
+        }
+        if ( 26 >= weather.code && 30 <= weather.code  ) {
+            
+         $('.geo .wi').addClass('wi-day-cloudy');   
+            
+        }
+        if ( 20 >= weather.code && 25 <= weather.code  ) {
+            
+         $('.geo .wi').addClass('wi-day-sleet');   
+            
+        }
+        if ( 10 >= weather.code && 19 <= weather.code  ) {
+            
+         $('.geo .wi').addClass('wi-snow');   
+           
+        }
       // Entire weather object
       console.log();
     },
