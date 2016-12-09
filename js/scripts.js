@@ -10,6 +10,15 @@ $.simpleWeather({
       $('.spokane img').attr('src', weather.image);
       $('.spokane .title').text(weather.title);
       $('.spokane .currently').text(weather.currently);
+        
+        
+        //Forecast
+        $('.spokane .forecast .date').text(weather.forecast[1].date);
+        $('.spokane .forecast .day').text(weather.forecast[1].day);
+        $('.spokane .forecast .high').text(weather.forecast[1].high);
+        $('.spokane .forecast .low').text(weather.forecast[1].low);
+  
+  
   
       // If this condition, show this icon
         if ( 51 >= weather.code && 90 <= weather.code  ) {
@@ -24,7 +33,8 @@ $.simpleWeather({
         }
         if ( 26 >= weather.code && 30 <= weather.code  ) {
             
-         $('.spokane .wi').addClass('wi-day-cloudy');   
+         $('.spokane .wi').addClass('wi-day-cloudy');
+            
             
         }
         if ( 20 >= weather.code && 25 <= weather.code  ) {
@@ -32,6 +42,7 @@ $.simpleWeather({
          $('.spokane .wi').addClass('wi-day-sleet');   
             
         }
+        
         if ( 10 >= weather.code && 19 <= weather.code  ) {
             
          $('.spokane .wi').addClass('wi-snow');  
@@ -61,6 +72,12 @@ $.simpleWeather({
       $('.seattle img').attr('src', weather.image);
        $('.seattle .title').text(weather.title);
          $('.seattle .currently').text(weather.currently);
+                //Forecast
+        $('.seattle .forecast .date').text(weather.forecast[1].date);
+        $('.seattle .forecast .day').text(weather.forecast[1].day);
+        $('.seattle .forecast .high').text(weather.forecast[1].high);
+        $('.seattle .forecast .low').text(weather.forecast[1].low);
+  
               // If this condition, show this icon
         if ( 51 >= weather.code && 90 <= weather.code  ) {
             
@@ -123,6 +140,12 @@ var getWeather = function(location) {
       $('.geo img').attr('src', weather.image);
       $('.geo .title').text(weather.title);  
          $('.geo .currently').text(weather.currently);
+                //Forecast
+        $('.geo .forecast .date').text(weather.forecast[1].date);
+        $('.geo .forecast .day').text(weather.forecast[1].day);
+        $('.geo .forecast .high').text(weather.forecast[1].high);
+        $('geo .forecast .low').text(weather.forecast[1].low);
+  
         
           // If this condition, show this icon
         if ( 51 >= weather.code && 90 <= weather.code  ) {

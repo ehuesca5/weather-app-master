@@ -34,8 +34,18 @@ section {
     
     /* flexbox as parent   */
 }
+.seattle {
+    background: url('http://bestanimations.com/Nature/Water/rain/rain-falling-animated-gif.gif');
+}
+.spokane {
+    background: url('http://bestanimations.com/Nature/winter/winter-snow-nature-animated-gif-26.gif'); 
+    width: 900px;
+}
 
-
+.geo {
+    background: url('https://s-media-cache-ak0.pinimg.com/originals/af/40/e5/af40e590b6245f339c280ab74c8454f2.gif');
+        
+}
 
 
 /********************
